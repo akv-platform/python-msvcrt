@@ -33,15 +33,15 @@ jobs:
       - name: Install Python
         uses: actions/setup-python@v2
         with:
-          python-version: '3.10.4'
-        env:
-          AGENT_TOOLSDIRECTORY: /opt/hostedtoolcache
+          python-version: '3.x'
+#        env:
+#          AGENT_TOOLSDIRECTORY: /opt/hostedtoolcache
 
       - name: Investigate python
         run: |
-          ls -la /opt/hostedtoolcache/Python/
-          ls -la /opt/hostedtoolcache/Python/3.10.4
-          ls -la /opt/hostedtoolcache/Python/3.10.4/x64
+#          ls -la /opt/hostedtoolcache/Python/
+#          ls -la /opt/hostedtoolcache/Python/3.10.4
+#          ls -la /opt/hostedtoolcache/Python/3.10.4/x64
           which python
           python --version
 
